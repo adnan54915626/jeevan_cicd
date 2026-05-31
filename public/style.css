@@ -1,0 +1,170 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Segoe UI;
+}
+
+body{
+background:#0f172a;
+color:white;
+}
+
+nav{
+position:sticky;
+top:0;
+display:flex;
+justify-content:space-between;
+padding:20px 50px;
+background:#111827;
+border-bottom:2px solid #ff9900;
+z-index:100;
+}
+
+.logo{
+font-size:28px;
+font-weight:bold;
+color:#ff9900;
+}
+
+nav ul{
+display:flex;
+gap:20px;
+list-style:none;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+}
+
+.hero{
+height:80vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+}
+
+.hero h1{
+font-size:60px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:22px;
+color:#cbd5e1;
+}
+
+.hero button{
+margin-top:30px;
+padding:15px 30px;
+background:#ff9900;
+border:none;
+border-radius:8px;
+cursor:pointer;
+font-size:18px;
+}
+
+.stats{
+display:flex;
+justify-content:center;
+gap:40px;
+padding:40px;
+}
+
+.stat{
+text-align:center;
+}
+
+.stat h2{
+color:#ff9900;
+font-size:50px;
+}
+
+section{
+padding:80px 50px;
+}
+
+section h2{
+text-align:center;
+margin-bottom:40px;
+color:#ff9900;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.card{
+background:#1e293b;
+padding:25px;
+border-radius:12px;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+box-shadow:0 0 25px rgba(255,153,0,.5);
+}
+
+.timeline{
+display:flex;
+flex-direction:column;
+gap:15px;
+align-items:center;
+}
+
+.timeline div{
+background:#1e293b;
+padding:15px 30px;
+border-left:5px solid #ff9900;
+width:350px;
+}
+
+#quiz button,
+#calculator button{
+padding:10px 20px;
+margin:10px;
+background:#ff9900;
+border:none;
+cursor:pointer;
+border-radius:5px;
+}
+
+input{
+padding:12px;
+margin:10px;
+width:250px;
+}
+
+footer{
+text-align:center;
+padding:30px;
+background:#111827;
+margin-top:50px;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:36px;
+}
+
+nav{
+flex-direction:column;
+gap:15px;
+}
+
+.stats{
+flex-direction:column;
+}
+
+}

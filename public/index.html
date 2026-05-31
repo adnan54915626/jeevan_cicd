@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AWS Cloud Learning Portal</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <div class="logo">☁ AWS Cloud Guide</div>
+
+  <ul>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#quiz">Quiz</a></li>
+    <li><a href="#calculator">Calculator</a></li>
+    <li><a href="#devops">DevOps</a></li>
+  </ul>
+</nav>
+
+<section class="hero">
+
+<h1>Master AWS & Cloud Computing</h1>
+
+<p>
+Learn AWS Services, DevOps Tools,
+Architecture Design & Certifications
+</p>
+
+<button onclick="scrollToServices()">
+Start Learning
+</button>
+
+</section>
+
+<section class="stats">
+
+<div class="stat">
+<h2 id="servicesCount">0</h2>
+<p>AWS Services</p>
+</div>
+
+<div class="stat">
+<h2 id="regionsCount">0</h2>
+<p>Regions</p>
+</div>
+
+<div class="stat">
+<h2 id="certCount">0</h2>
+<p>Certifications</p>
+</div>
+
+</section>
+
+<section id="services">
+
+<h2>Popular AWS Services</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>🖥 EC2</h3>
+<p>Virtual Servers in Cloud</p>
+</div>
+
+<div class="card">
+<h3>📦 S3</h3>
+<p>Object Storage Service</p>
+</div>
+
+<div class="card">
+<h3>⚡ Lambda</h3>
+<p>Serverless Computing</p>
+</div>
+
+<div class="card">
+<h3>🔒 IAM</h3>
+<p>Identity & Access Management</p>
+</div>
+
+<div class="card">
+<h3>🌐 Route53</h3>
+<p>DNS Management</p>
+</div>
+
+<div class="card">
+<h3>🗄 RDS</h3>
+<p>Managed Databases</p>
+</div>
+
+<div class="card">
+<h3>☁ CloudFront</h3>
+<p>Global CDN</p>
+</div>
+
+<div class="card">
+<h3>📡 API Gateway</h3>
+<p>API Management</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="roadmap">
+
+<h2>AWS Certification Roadmap</h2>
+
+<div class="timeline">
+
+<div>Cloud Practitioner</div>
+<div>Solutions Architect</div>
+<div>Developer Associate</div>
+<div>SysOps Administrator</div>
+<div>DevOps Engineer</div>
+
+</div>
+
+</section>
+
+<section id="quiz">
+
+<h2>AWS Quiz</h2>
+
+<p>
+Which AWS service provides Object Storage?
+</p>
+
+<button onclick="checkAnswer('EC2')">EC2</button>
+<button onclick="checkAnswer('Lambda')">Lambda</button>
+<button onclick="checkAnswer('S3')">S3</button>
+<button onclick="checkAnswer('IAM')">IAM</button>
+
+<h3 id="quizResult"></h3>
+
+</section>
+
+<section id="calculator">
+
+<h2>AWS Cost Calculator</h2>
+
+<input type="number" id="ec2" placeholder="EC2 Instances">
+
+<input type="number" id="s3" placeholder="S3 Storage GB">
+
+<button onclick="calculateCost()">
+Calculate
+</button>
+
+<h3 id="costResult"></h3>
+
+</section>
+
+<section id="devops">
+
+<h2>DevOps Tools</h2>
+
+<div class="cards">
+
+<div class="card">🐳 Docker</div>
+<div class="card">⚙ Jenkins</div>
+<div class="card">☸ Kubernetes</div>
+<div class="card">🏗 Terraform</div>
+<div class="card">🐙 GitHub Actions</div>
+
+</div>
+
+</section>
+
+<footer>
+Built with NestJS • Docker • Jenkins • AWS
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
